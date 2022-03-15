@@ -1,6 +1,15 @@
 # Use postgres/example user/password credentials
 # This is almost the same yaml you might find on docker hub
 # New aditions for this are very personal, if you find anything usefull take it.
+
+# usage on cli, inside the directory that contains this file type:
+# docker-compose up
+# 
+# then you might login typing:
+# psql -U postgres
+#
+# the default password is 'entrada' but you shall replace that from the begining for your own sake
+# and of course you need to install postgres cli tools
 version: '3.1'
 
 services:
