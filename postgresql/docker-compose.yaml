@@ -1,0 +1,14 @@
+# Use postgres/example user/password credentials
+# This is almost the same yaml you might find on docker hub
+# New aditions for this are very personal, if you find anything usefull take it.
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: entrada
+    ports:
+      - 5432:5432
